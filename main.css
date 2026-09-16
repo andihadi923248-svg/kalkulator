@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.kalkulator {
+    width: 370px;
+    padding: 30px;
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px #00000070;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header span {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #60a5fa;
+}
+
+.header h1 {
+    margin: 8px 0;
+    color: white;
+}
+
+.header p {
+    margin: 0;
+    color: #94a3b8;
+}
+
+label {
+    display: block;
+    margin: 15px 0 7px;
+    color: #cbd5e1;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    background: #1e293b;
+    border: 1px solid #475569;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #60a5fa;
+}
+
+#hasil {
+    margin: 20px 0;
+    padding: 20px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    color: #60a5fa;
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tombol {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.tombol button {
+    padding: 15px 5px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.tombol button:hover {
+    background: #3b82f6;
+    transform: translateY(-2px);
+}
+
+.reset {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #dc2626;
+    color: white;
+    cursor: pointer;
+}
+
+.reset:hover {
+    background: #ef4444;
+}
+
+.mode {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.mode button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    background: #1e293b;
+    color: white;
+    cursor: pointer;
+}
+
+.pembuat {
+    margin-top: 25px;
+    text-align: center;
+    border-top: 1px solid #334155;
+    padding-top: 18px;
+}
+
+.pembuat p {
+    margin: 0;
+    color: #64748b;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.pembuat h3 {
+    margin: 7px;
+    color: #60a5fa;
+}
+
+.pembuat span {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.kalkulator.light label,
+.kalkulator.light .header h1 {
+    color: #222;
+}
+
+/* LIGHT MODE */
+body.light {
+    background: #e8f0ff;
+}
+
+body.light .kalkulator {
+    background: white;
+}
+
+body.light .header h1 {
+    color: #222;
+}
+
+body.light .header p {
+    color: #666;
+}
+
+body.light label {
+    color: #333;
+}
+
+body.light input {
+    background: white;
+    color: #222;
+    border-color: #ccc;
+}
+
+body.light #hasil {
+    background: #eef4ff;
+    color: #2563eb;
+}
+
+body.light .pembuat p {
+    color: #666;
+}
+
+body.light .pembuat span {
+    color: #555;
+}
+
+.github {
+    margin-top: 12px;
+}
+
+.github button {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #475569;
+    border-radius: 12px;
+    background: #1e293b;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.github button:hover {
+    background: #334155;
+    transform: translateY(-2px);
+}
