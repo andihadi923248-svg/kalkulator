@@ -1,0 +1,1 @@
+bagaimana caranya wok
